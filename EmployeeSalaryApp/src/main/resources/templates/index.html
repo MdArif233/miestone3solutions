@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th ="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+</head>
+<body>
+<div class="container" >
+<div class="row">
+     <div>
+<h1 class="text-center">Enter Details</h1>
+     </div>
+         <form th:action="@{/addition}" th:object="${addtion}" method="post">
+      <div>
+<label>Basic Salary</label>
+<input type="text" id="basicSalary" class="form-control" name="basicSalary" >
+      </div>
+      
+  
+</br>
+        <div>
+<label>Hra</label>
+<input type="text" id="hra" class="form-control" name="hra" >
+      </div>
+      
+      </br>
+        <div>
+<label>Dra</label>
+<input type="text" id="dra" class="form-control" name="dra" >
+      </div>
+      
+    </br>  
+      <div>
+<label>Pf</label>
+<input type="text" id="pf" class="form-control" name="pf" >
+      </div>
+</br>
+       <div>
+<input type="submit" value="submit" class="btn btn-primary" />
+       </div>
+   </form>
+</div>
+</div>
+</body>
+</html>
